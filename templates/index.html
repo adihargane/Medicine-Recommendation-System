@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicination</title>
+    <link rel="icon" href="{{ url_for('static',filename='images/icon1.png') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+</head>
+<body>
+    <header>
+        <!-- <img class="logo" src="images/logo1.jpg" alt="logo">   ///jpg logo hide kelay -->
+        <h1 class="logo" >
+            <a href="{{ url_for('Landing_page') }}">Medicination</a>
+        </h1>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="{{ url_for('about_page') }}">About</a></li>
+                <li><a href="{{ url_for('team_page') }}">Team</a></li>
+                <li><a href="{{ url_for('contact_page') }}">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="{{ url_for('check_page') }}"><button>Let's Check</button></a>
+    </header>
+
+
+    <div class="frontimg">
+        <img src="{{ url_for('static',filename='images/index3.jpg') }} "alt="">
+        <div class="frontimg_text">
+            <!-- <h3>
+                MEDICINATION
+            </h3>
+            <P>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit ducimus quod, ipsum in optio magnam architecto voluptates, labore, est quae enim perferendis reiciendis animi eaque laborum distinctio id. Cupiditate, incidunt.
+            </P> -->
+            <h2><span>MEDICINATION<br></span>Our system is capable of accurately
+                <br>predicting appropriate medicine to patients<br>
+                according to their symptoms or diseases.</h2>
+
+                <a href="{{ url_for('check_page') }}">Let's Check</a>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container_foot">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="{{ url_for('about_page') }}">about us</a></li>
+                        <li><a href="{{ url_for('team_page') }}">team</a></li>
+                    </ul>
+                </div>
+ 
+ 
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/adihargane_"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/the_pratzs_pb7?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/vamsi-avula-390431219/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+
+    <div id="footer"></div>
+</body>
+</html>
