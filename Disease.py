@@ -54,4 +54,3 @@ b=np.array(b)
 b=b.reshape(1,132)
 sol=clf_rf.predict(b)
 sol
-

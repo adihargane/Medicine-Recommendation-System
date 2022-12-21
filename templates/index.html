@@ -11,7 +11,6 @@
 </head>
 <body>
     <header>
-        <!-- <img class="logo" src="images/logo1.jpg" alt="logo">   ///jpg logo hide kelay -->
         <h1 class="logo" >
             <a href="{{ url_for('Landing_page') }}">Medicination</a>
         </h1>
@@ -24,23 +23,14 @@
         </nav>
         <a class="cta" href="{{ url_for('check_page') }}"><button>Let's Check</button></a>
     </header>
-
-
     <div class="frontimg">
         <img src="{{ url_for('static',filename='images/index3.jpg') }} "alt="">
         <div class="frontimg_text">
-            <!-- <h3>
-                MEDICINATION
-            </h3>
-            <P>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit ducimus quod, ipsum in optio magnam architecto voluptates, labore, est quae enim perferendis reiciendis animi eaque laborum distinctio id. Cupiditate, incidunt.
-            </P> -->
             <h2><span>MEDICINATION<br></span>Our system is capable of accurately
                 <br>predicting appropriate medicine to patients<br>
                 according to their symptoms or diseases.</h2>
 
                 <a href="{{ url_for('check_page') }}">Let's Check</a>
-
         </div>
     </div>
     <footer class="footer">
@@ -53,8 +43,6 @@
                         <li><a href="{{ url_for('team_page') }}">team</a></li>
                     </ul>
                 </div>
- 
- 
                 <div class="footer-col">
                     <h4>follow us</h4>
                     <div class="social-links">
@@ -67,8 +55,6 @@
             </div>
         </div>
    </footer>
-
-
     <div id="footer"></div>
 </body>
 </html>

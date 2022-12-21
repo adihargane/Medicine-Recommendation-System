@@ -37,7 +37,6 @@ mail = Mail(application)
 def Landing_page():
     return render_template('index.html')
 
-  
 @application.route('/check')
 def check_page():
     return render_template('letscheck.html')
@@ -56,7 +55,6 @@ def contact_page():
 
 @application.route('/send', methods =['GET','POST' ]  )
 def send( ):
-    
    
     if request.method=='POST':
         name = request.form['name']
@@ -78,12 +76,8 @@ def send( ):
         mail.send(msg)
         
         return render_template('ThankYou.html')
-    
-           
         
     return render_template('contact.html')
-
-
 
 @application.route('/predict',methods=['POST','GET'])
 def predict():
